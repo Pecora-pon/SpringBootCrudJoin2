@@ -37,8 +37,9 @@
         <form:radiobutton path="gioiTinh" value="Nữ"/> Nữ
     </div>
     <div class="mb-3">
+<%--        sửa lại để có thể chọn ngày không cần phải nhập tay--%>
         <label>Ngày sinh</label>
-        <form:input path="ngaySinh" value="${nv.ngaySinh}"/>
+            <form:input path="ngaySinh"  type="Date"  pattern="yyyy-MM-dd"/>
     </div><div class="mb-3">
     <label>Địa chỉ</label>
     <form:input path="diaChi" value="${nv.diaChi}"/>

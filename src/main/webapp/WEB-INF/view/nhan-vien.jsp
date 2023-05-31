@@ -46,7 +46,8 @@
         </div>
         <div class="mb-3 form-group">
             <label>Ngày sinh</label>
-            <form:input path="ngaySinh" value="${nv.ngaySinh}"/>
+                <%--        sửa lại để có thể chọn ngày không cần phải nhập tay--%>
+            <form:input path="ngaySinh"  type="Date" pattern="yyyy-MM-dd"/>
             <form:errors path="ngaySinh"/>
         </div>
         <div class="mb-3 form-group">
